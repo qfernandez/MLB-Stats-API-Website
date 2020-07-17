@@ -21,12 +21,12 @@ function searchPlayer() {
                         url: "https://lookup-service-prod.mlb.com/json/named.sport_hitting_tm.bam?league_list_id='mlb'&game_type='R'&season=" + $("#year").val() + "&player_id=" + x,
                         dataType:"json",
                         success: function(data, status) {
-                            $('#information').append("<br>Season: "+ data["sport_hitting_tm"]["queryResults"]["row"]["season"]);
-                            $('#information').append("<br>Team at the time: "+ data["sport_hitting_tm"]["queryResults"]["row"]["team_full"]);
-                            $('#information').append("<br>Average: " + data["sport_hitting_tm"]["queryResults"]["row"]["avg"]);
-                            $('#information').append("<br>Walks: " + data["sport_hitting_tm"]["queryResults"]["row"]["bb"]);
-                            $('#information').append("<br>RBIs: " + data["sport_hitting_tm"]["queryResults"]["row"]["rbi"]);
-                            $('#information').append("<br>Homeruns: " + data["sport_hitting_tm"]["queryResults"]["row"]["hr"]);
+                            $('#p_season').append(data["sport_hitting_tm"]["queryResults"]["row"]["season"]);
+                            $('#p_team').append(data["sport_hitting_tm"]["queryResults"]["row"]["team_full"]);
+                            $('#p_avg').append(data["sport_hitting_tm"]["queryResults"]["row"]["avg"]);
+                            $('#p_walks').append(data["sport_hitting_tm"]["queryResults"]["row"]["bb"]);
+                            $('#p_rbis').append(data["sport_hitting_tm"]["queryResults"]["row"]["rbi"]);
+                            $('#p_hrs').append(data["sport_hitting_tm"]["queryResults"]["row"]["hr"]);
                             
                             //Image API
                             // $.ajax({

@@ -3,3 +3,10 @@ body {
     background: #A1D9BC;
     font: #0000A0;
 }
+
+.table {
+    background: white;
+    width: 50%;
+    margin-left:auto;
+    margin-right:auto;
+}
