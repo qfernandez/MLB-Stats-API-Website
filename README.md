@@ -1,14 +1,5 @@
-         ___        ______     ____ _                 _  ___  
-        / \ \      / / ___|   / ___| | ___  _   _  __| |/ _ \ 
-       / _ \ \ /\ / /\___ \  | |   | |/ _ \| | | |/ _` | (_) |
-      / ___ \ V  V /  ___) | | |___| | (_) | |_| | (_| |\__, |
-     /_/   \_\_/\_/  |____/   \____|_|\___/ \__,_|\__,_|  /_/ 
- ----------------------------------------------------------------- 
+To whom it may concern,
 
-
-Hi there! Welcome to AWS Cloud9!
-
-To get started, create some files, play with the terminal,
-or visit https://docs.aws.amazon.com/console/cloud9/ for our documentation.
-
-Happy coding!
+Hello, my name is Quentin-Allen and this is a personal project of mine. Seeing as there is a bit of a hiring freeze due to this unfortunate pandemic, I decided to
+work on this project that was recommended to me but the Assistant GM of the Toronto Blue Jays of Major League Baseball. This website incorporates the MLB Data API
+(https://appac.github.io/mlb-data-api-docs/) and I want to make it a sort of pseudo Baseball Refrence knock off. It is currently a work in progress.
