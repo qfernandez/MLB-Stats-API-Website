@@ -1,40 +1,39 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title> MLB Data API Website </title>
+        <title> Former Oakland A's Website </title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script type="text/javascript" src="functions/functions.js"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="stylesheet" href="css/styles.css" type="text/css"/>
     </head>
     <body>
-        <h1>MLB Stats API Player Search - Hitters</h1>
-        Player's Full Name: <input type = "text" id="playerName"/>
-        Season: <input type = "text" id="year"/>
-        <button onclick="searchPlayer()"> Search </button>
+        <h1>Former 2021 Oakland Athletics, where they're at & what how they're doing</h1>
+        <!--Player's Full Name: <input type = "text" id="playerName"/>-->
+        <!--Season: <input type = "text" id="year"/>-->
         <br /><br />
-        <div id="information"></div>
-        <table class="table table-sm">
-            <thead>
-                <tr>
-                    <th scope="col">Season</th>
-                    <th scope="col">Team</th>
-                    <th scope="col">Average</th>
-                    <th scope="col">Walks</th>
-                    <th scope="col">RBIs</th>
-                    <th scope="col">Homeruns</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row" id="p_season"></th>
-                    <th scope="row" id="p_team"></th>
-                    <th scope="row" id="p_avg"></th>
-                    <th scope="row" id="p_walks"></th>
-                    <th scope="row" id="p_rbis"></th>
-                    <th scope="row" id="p_hrs"></th>
-                </tr>
-            </tbody>
-        </table>
+        Hitters
+        <br><br>
+        Matt Olson
+        <div id="olson_information"></div>
+        <br>
+        Matt Chapman
+        <div id="chapman_information"></div>
+        <br>
+        Mark Canha
+        <div id="canha_information"></div>
+        <br>
+        Pitchers
+        <br><br>
+        Sean Manaea
+        <div id="manaea_information"></div>
+        <br></br>
     </body>
 </html>
+
+<script>
+    mattOlson();
+    mattChapman();
+    markCanha();
+    seanManaea();
+</script>
