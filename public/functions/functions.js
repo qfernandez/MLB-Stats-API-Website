@@ -40,8 +40,11 @@ function mattOlson() {
                 dataType: "json",
                 success: function(data, status) {
                         $('#olson_information').append("Current Team: " + data["sport_hitting_tm"]["queryResults"]["row"]["team_full"]);
+                        $('#olson_information').append("<br>Games played this season: " + data["sport_hitting_tm"]["queryResults"]["row"]["g"]);
+                        $('#olson_information').append("<br>Average: " + data["sport_hitting_tm"]["queryResults"]["row"]["avg"]);
+                        $('#olson_information').append("<br>Walks: " + data["sport_hitting_tm"]["queryResults"]["row"]["bb"]);
+                        $('#olson_information').append("<br>RBIs: " + data["sport_hitting_tm"]["queryResults"]["row"]["rbi"]);
                         $('#olson_information').append("<br>Homeruns: " + data["sport_hitting_tm"]["queryResults"]["row"]["hr"]);
-                        
                 }
             });
 }
@@ -53,8 +56,11 @@ function mattChapman(){
                 dataType: "json",
                 success: function(data, status) {
                         $('#chapman_information').append("Current Team: " + data["sport_hitting_tm"]["queryResults"]["row"]["team_full"]);
+                        $('#chapman_information').append("<br>Games played this season: " + data["sport_hitting_tm"]["queryResults"]["row"]["g"]);
+                        $('#chapman_information').append("<br>Average: " + data["sport_hitting_tm"]["queryResults"]["row"]["avg"]);
+                        $('#chapman_information').append("<br>Walks: " + data["sport_hitting_tm"]["queryResults"]["row"]["bb"]);
+                        $('#chapman_information').append("<br>RBIs: " + data["sport_hitting_tm"]["queryResults"]["row"]["rbi"]);
                         $('#chapman_information').append("<br>Homeruns: " + data["sport_hitting_tm"]["queryResults"]["row"]["hr"]);
-                        
                 }
             });
 }
@@ -66,8 +72,11 @@ function markCanha(){
                 dataType: "json",
                 success: function(data, status) {
                         $('#canha_information').append("Current Team: " + data["sport_hitting_tm"]["queryResults"]["row"]["team_full"]);
+                        $('#canha_information').append("<br>Games played this season: " + data["sport_hitting_tm"]["queryResults"]["row"]["g"]);
+                        $('#canha_information').append("<br>Average: " + data["sport_hitting_tm"]["queryResults"]["row"]["avg"]);
+                        $('#canha_information').append("<br>Walks: " + data["sport_hitting_tm"]["queryResults"]["row"]["bb"]);
+                        $('#canha_information').append("<br>RBIs: " + data["sport_hitting_tm"]["queryResults"]["row"]["rbi"]);
                         $('#canha_information').append("<br>Homeruns: " + data["sport_hitting_tm"]["queryResults"]["row"]["hr"]);
-                        
                 }
             });
 }
@@ -106,6 +115,58 @@ function seanManaea(){
                 success: function(data, status) {
                         $('#manaea_information').append("Current Team: " + data["sport_pitching_tm"]["queryResults"]["row"]["team_full"]);
                         $('#manaea_information').append("<br>Strikeouts: " + data["sport_pitching_tm"]["queryResults"]["row"]["so"]);
+                        
+                }
+            });
+}
+
+function christBassitt(){
+    $.ajax({
+                type: "GET",
+                url: "https://lookup-service-prod.mlb.com/json/named.sport_pitching_tm.bam?league_list_id='mlb'&game_type='R'&season='2022'&player_id='605135'",
+                dataType: "json",
+                success: function(data, status) {
+                        $('#bassitt_information').append("Current Team: " + data["sport_pitching_tm"]["queryResults"]["row"]["team_full"]);
+                        $('#bassitt_information').append("<br>Strikeouts: " + data["sport_pitching_tm"]["queryResults"]["row"]["so"]);
+                        
+                }
+            });
+}
+
+function sergioRomo(){
+    $.ajax({
+                type: "GET",
+                url: "https://lookup-service-prod.mlb.com/json/named.sport_pitching_tm.bam?league_list_id='mlb'&game_type='R'&season='2022'&player_id='489265'",
+                dataType: "json",
+                success: function(data, status) {
+                        $('#romo_information').append("Current Team: " + data["sport_pitching_tm"]["queryResults"]["row"]["team_full"]);
+                        $('#romo_information').append("<br>Strikeouts: " + data["sport_pitching_tm"]["queryResults"]["row"]["so"]);
+                        
+                }
+            });
+}
+
+function jakeDiekman(){
+    $.ajax({
+                type: "GET",
+                url: "https://lookup-service-prod.mlb.com/json/named.sport_pitching_tm.bam?league_list_id='mlb'&game_type='R'&season='2022'&player_id='518617'",
+                dataType: "json",
+                success: function(data, status) {
+                        $('#diekman_information').append("Current Team: " + data["sport_pitching_tm"]["queryResults"]["row"]["team_full"]);
+                        $('#diekman_information').append("<br>Strikeouts: " + data["sport_pitching_tm"]["queryResults"]["row"]["so"]);
+                        
+                }
+            });
+}
+
+function jesusLuzardo(){
+    $.ajax({
+                type: "GET",
+                url: "https://lookup-service-prod.mlb.com/json/named.sport_pitching_tm.bam?league_list_id='mlb'&game_type='R'&season='2022'&player_id='666200'",
+                dataType: "json",
+                success: function(data, status) {
+                        $('#luzardo_information').append("Current Team: " + data["sport_pitching_tm"]["queryResults"]["row"]["team_full"]);
+                        $('#luzardo_information').append("<br>Strikeouts: " + data["sport_pitching_tm"]["queryResults"]["row"]["so"]);
                         
                 }
             });
