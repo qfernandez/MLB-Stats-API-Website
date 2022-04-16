@@ -71,6 +71,33 @@ function markCanha(){
                 }
             });
 }
+
+function starlingMarte(){
+    $.ajax({
+                type: "GET",
+                url: "https://lookup-service-prod.mlb.com/json/named.sport_hitting_tm.bam?league_list_id='mlb'&game_type='R'&season='2022'&player_id='516782'",
+                dataType: "json",
+                success: function(data, status) {
+                        $('#marte_information').append("Current Team: " + data["sport_hitting_tm"]["queryResults"]["row"]["team_full"]);
+                        $('#marte_information').append("<br>Homeruns: " + data["sport_hitting_tm"]["queryResults"]["row"]["hr"]);
+                        
+                }
+            });
+}
+
+function joshHarrison(){
+    $.ajax({
+                type: "GET",
+                url: "https://lookup-service-prod.mlb.com/json/named.sport_hitting_tm.bam?league_list_id='mlb'&game_type='R'&season='2022'&player_id='543281'",
+                dataType: "json",
+                success: function(data, status) {
+                        $('#harrison_information').append("Current Team: " + data["sport_hitting_tm"]["queryResults"]["row"]["team_full"]);
+                        $('#harrison_information').append("<br>Homeruns: " + data["sport_hitting_tm"]["queryResults"]["row"]["hr"]);
+                        
+                }
+            });
+}
+
 function seanManaea(){
     $.ajax({
                 type: "GET",
